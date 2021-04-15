@@ -20,23 +20,23 @@
 # 4W&#39;s and 1&#39;H
 
 ## Who:
-
+* Banks use this system inorder to save time and cost.
 **TBD**
 
 ## What:
-
+* Bank management system can help the user to perform all the tasks like creating an account, deposit amount, withdraw amount, check balance, view all account holders details, close an account and modify an account.
 **TBD**
 
 ## When:
-
+* The record of the customer can be added, updated, searched and deleted. It is based on a concept to generate and maintain daily payment transactions with the customer’s account. 
 **TBD**
 
 ## Where:
-
+* This problem can occur in different banking sectors all over the world.
 **TBD**
 
 ## How:
-
+* An effective bank management can help you derive maximum profits with minimum risks.
 **TBD**
 
 # Detail requirements
