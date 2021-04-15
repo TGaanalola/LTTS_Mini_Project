@@ -12,7 +12,32 @@
 ![Description](Link to Pic)
 -- Content 
 ## Defining Our System
-    -- TBD
+### Existing system
+ * In the existing system the transactions are done only manually but in proposed system we have to computerize all the banking transaction using the software Bank management system.
+ * Disadvantages of existing system:
+     * Lack of security of data.
+     * More man power.
+     * Time consuming.
+     * Consumes large volume of pare work.
+     * Needs manual calculations.
+     * No direct role for the higher oﬃcials.
+     * Damage of machines due to lack of attention.
+  * To avoid all these limitations and make the working more accurately the system needs to be computerized.
+### Proposed system
+ * The aim of proposed system is to develop a system of improved facilities. The proposed system can overcome all the limitations of the existing system. The system provides proper security and reduces the manual work.
+ * Advantages of proposed system:
+   The system is very simple in design and to implement. The system requires very low system resources and the system will work in almost all conﬁgurations. It has gotfollowing features 
+     * Security of data.
+     * Ensure data accuracy’s.
+     * Proper control of the higher oﬃcials.
+     * Reduce the damages of the machines.
+     * Minimize manual data entry.
+     * Minimum time needed for the various processing.
+     * Greater eﬃciency.
+     * Better service.
+     * User friendliness and interactive.
+     * Minimum time required
+   
 ## SWOT ANALYSIS
 ![image](https://user-images.githubusercontent.com/81503646/114817678-1540d800-9dd8-11eb-992c-a7f6263e62f6.png)
 
