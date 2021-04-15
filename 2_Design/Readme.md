@@ -19,5 +19,6 @@
 
 
 # State diagram
+![image](https://user-images.githubusercontent.com/81503646/114867366-581fa180-9e12-11eb-8e2b-45dbbdd820b3.png)
 
 
