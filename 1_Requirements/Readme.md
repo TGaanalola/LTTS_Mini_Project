@@ -50,7 +50,7 @@
 ##  Low level Requirements:
 | ID | Description | HLR ID | Status (Implemented/Future)|
 | ----- | --------- | ------| ------ |
-| LR01 | Admin can login to the system and manage all the functionalities of banking management | Implemented  |
+| LR01 | Admin can login to the system and manage all the functionalities of banking management | HR01 | Implemented  |
 | LR02 | Admin can add, edit, delete and view all records of the customer, Accounts, Savings account and Balance | HR01, HR03, HR04 |  Implemented |
 | LR03 | Admin can manage all the details about Employees, Fixed deposit and Current account | HR02, HR05, HR06 | Future |
 | LR04 | If user searches for an invalid ID "No Record Found" message should be displayed | HR01, HR02 |  Implemented  |
