@@ -44,9 +44,18 @@
 | HR04 | User shall be able to process Savings account records | Implemented |
 | HR05 | User shall be able to process records on Current account | Implemented |
 | HR06 | User shall be able to process Fixed deposit records | Implemented |
-| HR07 | Data should not be lost in case of faliure | Future |
+| HR07 | Data should not be lost in case of failure | Future |
 | HR08 | Data should always be stored when closing the system | Implemented |
 
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+| ID | Description | HLR ID | Status (Implemented/Future)|
+| ----- | --------- | ------| ------ |
+| LR01 | Admin can login to the system and manage all the functionalities of banking management | Implemented  |
+| LR02 | Admin can add, edit, delete and view all records of the customer, Accounts, Savings account and Balance | HR01, HR03, HR04 |  Implemented |
+| LR03 | Admin can manage all the details about Employees, Fixed deposit and Current account | HR02, HR05, HR06 | Future |
+| LR04 | If user searches for an invalid ID "No Record Found" message should be displayed | HR01, HR02 |  Implemented  |
+| LR05 | Admin can also generate reports on Customer, Employees, Accounts, Savings account, Fixed deposit and Current account | HR01, HR02, HR03, HR04, HR05, HR06 |  Implemented  |
+| LR06 | Admin can search the details of employees, savings account and current account | HR02, HR04, HR05 |  Implemented  |
+| LR05 | Admin can track details of employee, savings account, account and fixed deposit | HR02, HR03, HR04, HR06 |  Implemented  |
+| LR06 | If opening the file fails, then the system shloud prompt the message "Unable to access file" and should not end the program execution | HR01, HR02, HR03, HR04, HR05 |  Implemented  |
+| LR07 | When admin logs off the system perform check and save data to file (1). If new data in inserted add it to file (2). If New data is not inserted do not add anything to file | HR08 |  Implemented  |
