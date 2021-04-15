@@ -36,9 +36,16 @@
 
 # Detail requirements
 ## High Level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
-
+| ID | Description | Status | 
+| ----- | ----- | ---------|
+| HR01 | User shall be able to process customer records | Implemented |
+| HR02 | User shall be able to process employee records | Implemented |
+| HR03 | User shall be able to process records on Accounts | Implemented |
+| HR04 | User shall be able to process Savings account records | Implemented |
+| HR05 | User shall be able to process records on Current account | Implemented |
+| HR06 | User shall be able to process Fixed deposit records | Implemented |
+| HR07 | Data should not be lost in case of faliure | Future |
+| HR08 | Data should always be stored when closing the system | Implemented |
 
 ##  Low level Requirements:
 --- TBD in Tabular Format 
