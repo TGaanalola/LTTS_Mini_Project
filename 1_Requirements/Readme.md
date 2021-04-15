@@ -26,7 +26,7 @@
 * Bank management system can help the user to perform all the tasks like creating an account, deposit amount, withdraw amount, check balance, view all account holders details, close an account and modify an account.
 
 ## When:
-* The record of the customer can be added, updated, searched and deleted. It is based on a concept to generate and maintain daily payment transactions with the customer’s account. 
+* In banks there are huge number of customers whose data needs to be processed. The record of the customer can be added, updated, searched and deleted. It is based on a concept to generate and maintain daily payment transactions with the customer’s account. 
 
 ## Where:
 * This problem can occur in different banking sectors all over the world.
