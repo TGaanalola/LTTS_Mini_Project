@@ -62,12 +62,12 @@
 ## High Level Requirements:
 | ID | Description | Status | 
 | ----- | ----- | ---------|
-| HR01 | Admin shall be able to process customer records | Implemented |
-| HR02 | Admin shall be able to process employee records | Implemented |
-| HR03 | Admin shall be able to process records on Accounts | Implemented |
-| HR04 | Admin shall be able to process Savings account records | Implemented |
-| HR05 | Admin shall be able to process records on Current account | Implemented |
-| HR06 | Admin shall be able to process Fixed deposit records | Implemented |
+| HR01 | Admin shall be able to manage customer records | Implemented |
+| HR02 | Admin shall be able to manage employee records | Implemented |
+| HR03 | Admin shall be able to manage records on Accounts | Implemented |
+| HR04 | Admin shall be able to manage Savings account records | Implemented |
+| HR05 | Admin shall be able to manage records on Current account | Implemented |
+| HR06 | Admin shall be able to manage Fixed deposit records | Implemented |
 | HR07 | Data should not be lost in case of failure | Future |
 | HR08 | Data should always be stored when closing the system | Implemented |
 
