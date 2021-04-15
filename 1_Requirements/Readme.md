@@ -26,7 +26,7 @@
 ### Proposed system
  * The aim of proposed system is to develop a system of improved facilities. The proposed system can overcome all the limitations of the existing system. The system provides proper security and reduces the manual work.
  * Advantages of proposed system:
-   The system is very simple in design and to implement. The system requires very low system resources and the system will work in almost all conﬁgurations. It has gotfollowing features 
+  * The system is very simple in design and to implement. The system requires very low system resources and the system will work in almost all conﬁgurations. It has gotfollowing features 
      * Security of data.
      * Ensure data accuracy’s.
      * Proper control of the higher oﬃcials.
@@ -36,7 +36,6 @@
      * Greater eﬃciency.
      * Better service.
      * User friendliness and interactive.
-     * Minimum time required
    
 ## SWOT ANALYSIS
 ![image](https://user-images.githubusercontent.com/81503646/114817678-1540d800-9dd8-11eb-992c-a7f6263e62f6.png)
