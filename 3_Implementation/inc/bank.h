@@ -1,47 +1,38 @@
-/** 
-* @file calculator_operations.h
-* Calculator application with 4 mathematical operations
-*
-*/
-#ifndef __CALCULATOR_OPERATIONS_H__
-#define __CALCULATOR_OPERATIONS_H__
+
+#ifndef __BANK_H__
+#define __BANK_H__
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdio_ext.h>
+#include <string.h>
 
-/**
-*  adds the operand1 and operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 + operand2
-*/
-int add(int operand1, int operand2);
+typedef enum user{
+    SUCCESS = 0,
+    NO_EXISTING_ACC=2,
+    EXISTS=6
+}user;
 
-/**
-*  subtracts the operand1, operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 - operand2
-*/
-int subtract(int operand1, int operand2);
-
-/**
-*  multiply the operand1, operand2 and returns the result
-* @param[in] operand1 
-* @param[in] operand2 
-* @return Result of operand1 * operand2
-*/
-int multiply(int operand1, int operand2);
+typedef struct info{
+    char name[40];
+    int acc_no;
+    int age;
+    char address[40];
+    int phone;
+    char acc_type[10];
+    float amt;
+    int month;
+    int day;
+    int year;
+    struct info *nt;
+}info;
 
 
-/**
-* divides the operand1 by operand2 and returns the result 
-* @param[in] operand1 
-* @param[in] operand2 
-* @return integer value of the operand1 / operand2
-* @note returns 0 for divide by 0 error
-*/
-int divide(int operand1, int operand2);
+info *newacc(info *,char *,int,int,char *,int,char *,float,int,int,int);
 
-#endif  /* #define __CALCULATOR_OPERATIONS_H__ */
+user add(info *,char *,int ,int ,char *,int ,char *,float ,int ,int ,int );
+
+user deposit(float,info *,info *,int *);
+
+user withdraw(info *,float,info *,int *);
+
+#endif
