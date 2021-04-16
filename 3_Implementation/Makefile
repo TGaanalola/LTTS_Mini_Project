@@ -68,4 +68,4 @@ valgrind:
 
 clean:
 	
-	$(RM) $(EXEC)
+	$(RM) *.$(EXEC)
