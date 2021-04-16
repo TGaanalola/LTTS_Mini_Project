@@ -27,9 +27,3 @@ SF ID |  Name   | Features    |
 |F_02	|Save data to file if only new data is added|
 |F_03	|New records gets saved in file at program shut down|
 
-## Learning Resources
-1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
-3. [git inspector](https://github.com/ejwa/gitinspector.git)
-4. [github workflow](https://docs.github.com/en/actions/learn-github-action)
-
