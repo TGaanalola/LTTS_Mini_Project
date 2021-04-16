@@ -2,9 +2,6 @@
 PROJECT_NAME = Bank
 TEST_PROJECT_NAME = Test_$(PROJECT_NAME)
 
-# Output directory
-BUILD = build
-
 SRC =src/addacc.c \
 src/display.c \
 src/searchacc.c \
