@@ -1,4 +1,3 @@
-# Name of the project
 PROJECT_NAME = Bank
 TEST_PROJECT_NAME = Test_$(PROJECT_NAME)
 
