@@ -10,22 +10,30 @@ void tearDown()
 {
 
 }
-customer c[1]={{101,"ravi",400}};
-void test_search(void)
+
+/*Test for password*/
+void testforpassword(void)
 {
-  TEST_ASSERT_EQUAL(0, search(c,1,101));
-  TEST_ASSERT_EQUAL(-1, search(c,1,0));
+	TEST_ASSERT_EQUAL(0,check("gaana@2000","gaana@2000"));
+	
 }
+customer obj[1]={123456789,"gaana",10000};
+/*Test for Account Search*/
+void recordfound(void)
+{
+TEST_ASSERT_EQUAL(0,search(obj,1,123456789));
+}	
+/*Test if is not found*/
+void recordnotfound(void)
+{
+TEST_ASSERT_EQUAL(-1,search(obj,1,1234567));
+}	
 int main()
 {
-/* Initiate the Unity Test Framework */
-  UNITY_BEGIN();
-
-/* Run Test functions */
-  RUN_TEST(test_search);
- 
-  /* Close the Unity Test Framework */
-  return UNITY_END(); 
+	UNITY_BEGIN();
+	RUN_TEST(testforpassword);
+	RUN_TEST(recordfound);
+	RUN_TEST(recordnotfound);
+	
+	return UNITY_END();
 }
-
-
