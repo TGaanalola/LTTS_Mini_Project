@@ -38,6 +38,7 @@ all:
 	
 run:
 	$(call FixPath,$(PROJECT_NAME).$(EXEC))
+
 test:
 	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJECT_NAME).$(EXEC))
 	./$(call FixPath,$(TEST_PROJECT_NAME).$(EXEC))
@@ -55,6 +56,7 @@ coverage:
 
 cppcheck:
 	cppcheck --enable=all $(SRC) main.c
+
 debug:
 	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJECT_NAME).$(EXEC)
 	gdb $(PROJECT_NAME).$(EXEC)
