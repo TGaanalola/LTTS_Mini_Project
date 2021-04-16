@@ -13,6 +13,7 @@
 
 | **Test ID** | **Description**                                              | **Exp IN** | **Exp OUT** | **Actual Out** |**Type Of Test**  |    
 |-------------|--------------------------------------------------------------|------------|-------------|----------------|------------------|
-|  L_01       |--------------------------------------------------------------|  ------------|-------------|----------------|Requirement based |
-|  L_02       |--------------------------------------------------------------|  ------------|-------------|----------------|Scenario based    |
-|  L_03       |--------------------------------------------------------------|  ------------|-------------|----------------|Boundary based    |
+|  L_01       | Addition | (1). Struct Pointer (2). Account number	| SUCCESS |	SUCCESS |Requirement based |
+|  L_02       |Account number during addition doesn't exist| (1). Struct Pointer (2). Account number|	NO_ACC_EXISTS |	NO_ACC_EXISTS |Scenario based    |
+|  L_03       |Deposit, Withdraw	|  Account number	| SUCCESS	| SUCCESS	| Technical|
+|  L_04       | Account number doesn't exist | (1). Account number (2). Flag |	NO_ACC_EXIST | NO_ACC_EXIST |	Technical|
