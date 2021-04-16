@@ -16,10 +16,16 @@
 
 ## Contributors List and Summary
 
-SF ID |  Name   |    Features    | 
--------|---------|----------------|
+SF ID |  Name   | Features    | 
+-------|--------- |  ---------------|
 264683 | Anasi Nikitha  | Template structure  |          
+264675 | Gaanalola Tankasala | F_01, F_02, F_03 | 
 
+|Feature Id	|Feature|
+|--------------|-------|
+|F_01	|Option to load older saved data|
+|F_02	|Save data to file if only new data is added|
+|F_03	|New records gets saved in file at program shut down|
 
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
