@@ -1,65 +1,71 @@
 # Name of the project
-PROJECT_NAME = Calculator
+PROJECT_NAME = Bank
+TEST_PROJECT_NAME = Test_$(PROJECT_NAME)
 
 # Output directory
 BUILD = build
 
-# All source code files
-SRC = project_main.c\
-src/calculator_operations.c
+SRC =src/addacc.c \
+src/display.c \
+src/searchacc.c \
+src/deposit.c \
+src/withdraw.c \
+src/checkpasswd.c \ 
+Bank.c\
 
-# All test source files
-TEST_SRC = src/calculator_operations.c\
-test/test_calculator_operations.c\
-unity/unity.c\
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+Bank_SRC = test.c
 
-# All include folders with header files
-INC	= -Iinc\
--Iunity\
+TEST_SRC = test/test.c \
+unity/unity.c 
+INC_H = inc
+INC_T = unity
 
-#Library Inlcudes
-#if working with CUnit 
-#INCLUDE_LIBS = -lcunit
-INCLUDE_LIBS =
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
 
-# Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).$(EXEC)
 
-# Document files
-DOCUMENTATION_OUTPUT = documentation/html
-
-# Default target built
-$(PROJECT_NAME):all
-
-# Run the target even if the matching name exists
 .PHONY: run clean test doc all
 
-all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+all:
+	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJECT_NAME).$(EXEC))
+	
+run:
+	$(call FixPath,$(PROJECT_NAME).$(EXEC))
+test:
+	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJECT_NAME).$(EXEC))
+	./$(call FixPath,$(TEST_PROJECT_NAME).$(EXEC))
 
-# Call `make run` to run the application
-run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
+coverage:
+	cp test/test.c .
+	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJECT_NAME).$(EXEC))
+	$(call FixPath, ./$(TEST_PROJECT_NAME).$(EXEC))
+	gcov -a $(Bank_SRC)
+	$(RM) *.$(EXEC)
+	
+	
+	$(RM) test.c
 
-# Document the code using Doxygen
-#doc:
-#	make -C ./documentation
 
-# Build and run the unit tests
-test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
-#Coverage
-coverageCheck:$(BUILD)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
+cppcheck:
+	cppcheck --enable=all $(SRC) main.c
+debug:
+	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJECT_NAME).$(EXEC)
+	gdb $(PROJECT_NAME).$(EXEC)
 
-# Remove all the built files, invoke by `make clean`
+valgrind:
+	valgrind ./$(TEST_PROJECT_NAME).$(EXEC)
+
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
-
-# Create new build folder if not present
-$(BUILD):
-	mkdir build
+	
+	$(RM) $(EXEC)
